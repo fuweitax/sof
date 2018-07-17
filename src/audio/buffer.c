@@ -156,9 +156,9 @@ void comp_update_buffer_consume(struct comp_buffer *buffer, uint32_t bytes)
 	buffer->r_ptr += bytes;
 
 	/* check for pointer wrap */
-	if (buffer->r_ptr >= buffer->end_addr)
+	if (buffer->r_ptr >= buffer->end_addr) {
 		buffer->r_ptr = buffer->addr + (buffer->r_ptr - buffer->end_addr);
-
+	}
 	/* calculate available bytes */
 	if (buffer->r_ptr < buffer->w_ptr)
 		buffer->avail = buffer->w_ptr - buffer->r_ptr;
