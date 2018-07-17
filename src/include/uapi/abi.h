@@ -36,7 +36,7 @@
 
 #ifndef __INCLUDE_UAPI_ABI_H__
 #define __INCLUDE_UAPI_ABI_H__
-
+#define JUST_FOR_TEST
 /** \brief SOF ABI version number. */
 #define SOF_ABI_VERSION		1
 
