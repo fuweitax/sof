@@ -36,7 +36,8 @@
 #include <stdint.h>
 #include <errno.h>
 
-typedef struct {
+typedef struct
+{
 	volatile int32_t value;
 } atomic_t;
 
