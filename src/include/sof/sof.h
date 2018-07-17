@@ -45,7 +45,8 @@ struct sa;
 	(type *)((char *)__memberptr - offsetof(type, member));})
 
 /* general firmware context */
-struct sof {
+struct sof
+{
 	/* init data */
 	int argc;
 	char **argv;
