@@ -37,7 +37,8 @@
 #define CLOCK_NOTIFY_PRE	0
 #define CLOCK_NOTIFY_POST	1
 
-struct clock_notify_data {
+struct clock_notify_data
+{
 	uint32_t old_freq;
 	uint32_t old_ticks_per_usec;
 	uint32_t freq;
