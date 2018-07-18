@@ -32,7 +32,7 @@
 #define __INCLUDE_IO__
 
 #include <stdint.h>
-
+#define FOR_TEST
 /* Macros for register bits access */
 #define BIT(b)			(1 << (b))
 #define MASK(b_hi, b_lo)	((1 << ((b_hi) - (b_lo) + 1)) - 1)
