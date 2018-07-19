@@ -35,6 +35,8 @@
 #include <stddef.h>
 #include <arch/sof.h>
 
+#define JUST_FOR_TEST
+
 struct ipc;
 struct sa;
 
