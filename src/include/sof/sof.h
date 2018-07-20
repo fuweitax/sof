@@ -42,6 +42,7 @@ struct sa;
 #define JUST_FOR_TEST2
 #define JUST_FOR_TEST3
 #define JUST_FOR_TEST4
+#define JUST_FOR_TEST5
 
 /* use same syntax as Linux for simplicity */
 #define ARRAY_SIZE(x) (sizeof(x) / sizeof(x[0]))
