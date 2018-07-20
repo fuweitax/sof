@@ -39,6 +39,7 @@ struct ipc;
 struct sa;
 
 #define JUST_FOR_TEST1
+#define JUST_FOR_TEST2
 
 /* use same syntax as Linux for simplicity */
 #define ARRAY_SIZE(x) (sizeof(x) / sizeof(x[0]))
