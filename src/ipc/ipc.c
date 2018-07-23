@@ -43,6 +43,7 @@
 #include <sof/audio/component.h>
 #include <sof/audio/pipeline.h>
 #include <sof/audio/buffer.h>
+#define JUST_FOR_TEST
 
 /*
  * Components, buffers and pipelines all use the same set of monotonic ID
