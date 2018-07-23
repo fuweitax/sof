@@ -51,7 +51,7 @@
 #include <sof/panic.h>
 #include <uapi/ipc.h>
 #include <sof/intel-ipc.h>
-
+#define JSUT_FOR_TEST
 extern struct ipc *_ipc;
 
 static void do_notify(void)
