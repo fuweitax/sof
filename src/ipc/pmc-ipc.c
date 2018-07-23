@@ -40,7 +40,7 @@
 #include <platform/pmc.h>
 #include <platform/shim.h>
 
-
+#define JUST_FOR_TEST1
 
 /* private data for IPC */
 struct intel_ipc_pmc_data {
