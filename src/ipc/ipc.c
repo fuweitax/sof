@@ -499,7 +499,7 @@ out:
 }
 #endif
 
-int ipc_init(struct sof *sof)
+int ipc_init(struct sof sof)
 {
 	int i;
 	trace_ipc("IPI");
