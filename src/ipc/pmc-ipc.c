@@ -47,7 +47,7 @@ struct intel_ipc_pmc_data {
 	uint32_t msg_l;
 	uint32_t msg_h;
 	uint32_t pending;
-};
+}
 
 
 static struct intel_ipc_pmc_data *_pmc;
