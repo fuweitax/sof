@@ -1107,7 +1107,8 @@ int ipc_queue_host_message(struct ipc *ipc, uint32_t header,
 	if (tx_bytes > 0 && tx_bytes < SOF_IPC_MSG_MAX_SIZE)
 		rmemcpy(msg->tx_data, tx_data, tx_bytes);
 
-	if (!found) {
+	if (!found)
+	{
 		/* now queue the message */
 		ipc->dsp_pending = 1;
 		list_item_append(&msg->list, &ipc->msg_list);
