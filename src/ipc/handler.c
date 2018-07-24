@@ -1097,7 +1097,7 @@ int ipc_queue_host_message(struct ipc *ipc, uint32_t header,
 	}
 
 	/* prepare the message */
-	msg->header = header;
+	msg->header = header
 	msg->tx_size = tx_bytes;
 	msg->rx_size = rx_bytes;
 	msg->cb_data = cb_data;
