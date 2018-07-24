@@ -1121,8 +1121,9 @@ out:
 /* process current message */
 int ipc_process_msg_queue(void)
 {
-	if (_ipc->host_pending)
+	if (_ipc->host_pending) {
 		ipc_platform_do_cmd(_ipc);
+	}
 	if (_ipc->dsp_pending)
 		ipc_platform_send_msg(_ipc);
 	return 0;
