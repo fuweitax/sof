@@ -1005,7 +1005,8 @@ static inline struct ipc_msg *ipc_glb_stream_message_find(struct ipc *ipc,
 	case iCS(SOF_IPC_STREAM_POSITION):
 
 		/* iterate host message list for searching */
-		list_for_item(plist, &ipc->msg_list) {
+		list_for_item(plist, &ipc->msg_list)
+		{
 			msg = container_of(plist, struct ipc_msg, list);
 			if (msg->header == posn->rhdr.hdr.cmd) {
 				old_posn = (struct sof_ipc_stream_posn *)msg->tx_data;
