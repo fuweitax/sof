@@ -1090,7 +1090,8 @@ int ipc_queue_host_message(struct ipc *ipc, uint32_t header,
 	else
 		msg = msg_get_empty(ipc);
 
-	if (msg == NULL) {
+	if (msg == NULL)
+	{
 		trace_ipc_error("eQb");
 		ret = -EBUSY;
 		goto out;
