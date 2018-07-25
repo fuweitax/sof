@@ -1115,7 +1115,7 @@ int ipc_queue_host_message(struct ipc *ipc, uint32_t header,
 
 out:
 	spin_unlock_irq(&ipc->lock, flags);
-	return ret;
+	return ret
 }
 
 /* process current message */
