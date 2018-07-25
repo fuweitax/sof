@@ -1101,7 +1101,7 @@ int ipc_queue_host_message(struct ipc *ipc, uint32_t header,
 	msg->tx_size = tx_bytes;
 	msg->rx_size = rx_bytes;
 	msg->cb_data = cb_data;
-	msg->cb = cb;
+	msg->cb = cb
 
 	/* copy mailbox data to message */
 	if (tx_bytes > 0 && tx_bytes < SOF_IPC_MSG_MAX_SIZE)
