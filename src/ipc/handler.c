@@ -1110,7 +1110,7 @@ int ipc_queue_host_message(struct ipc *ipc, uint32_t header,
 	if (!found) {
 		/* now queue the message */
 		ipc->dsp_pending = 1;
-		list_item_append(&msg->list, &ipc->msg_list);
+		list_item_append(&msg->list, &ipc->msg_list)
 	}
 
 out:
