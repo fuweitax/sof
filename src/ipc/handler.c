@@ -60,6 +60,7 @@
 #include <sof/dma-trace.h>
 #include <config.h>
 
+#define JUST_FOR_TEST
 #define iGS(x) ((x >> SOF_GLB_TYPE_SHIFT) & 0xf)
 #define iCS(x) ((x >> SOF_CMD_TYPE_SHIFT) & 0xfff)
 
