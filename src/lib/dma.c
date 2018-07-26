@@ -31,7 +31,7 @@
 #include <sof/dma.h>
 #include <sof/atomic.h>
 #include <platform/dma.h>
-
+#define JUST_FOR_TEST
 /*
  * API to request a platform DMAC.
  * Users can request DMAC based on dev type, copy direction, capabilities
