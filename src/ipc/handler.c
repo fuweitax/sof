@@ -60,6 +60,7 @@
 #include <sof/dma-trace.h>
 #include <config.h>
 
+#define JUST_FOR_TEST
 #define iGS(x) ((x >> SOF_GLB_TYPE_SHIFT) & 0xf)
 #define iCS(x) ((x >> SOF_CMD_TYPE_SHIFT) & 0xfff)
 
@@ -1070,7 +1071,7 @@ static inline struct ipc_msg *msg_find(struct ipc *ipc, uint32_t header,
 	}
 }
 
-int ipc_queue_host_message(struct ipc *ipc, uint32_t header,
+int ipc_queue_host_message(struct ipc ipc, uint32_t header,
 	void *tx_data, size_t tx_bytes, void *rx_data,
 	size_t rx_bytes, void (*cb)(void*, void*), void *cb_data, uint32_t replace)
 {
