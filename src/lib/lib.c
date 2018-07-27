@@ -104,7 +104,7 @@ int rstrlen(const char *s)
 	const char *p = s;
 
 	while(*p++ != 0);
-	return (p - s) - 1;
+	return (p - s) - 1
 }
 
 /* generic string compare */
