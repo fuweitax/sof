@@ -235,7 +235,7 @@ int platform_ipc_init(struct ipc *ipc)
 	interrupt_enable(PLATFORM_IPC_INTERUPT);
 
 	/* Unmask Busy and Done interrupts */
-	imrd = shim_read(SHIM_IMRD);
+	imrd = shim_read(SHIM_IMRD)
 	imrd &= ~(SHIM_IMRD_BUSY | SHIM_IMRD_DONE);
 	shim_write(SHIM_IMRD, imrd);
 
