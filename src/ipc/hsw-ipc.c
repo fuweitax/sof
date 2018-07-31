@@ -195,7 +195,7 @@ out:
 	spin_unlock_irq(&ipc->lock, flags);
 }
 
-int platform_ipc_init(struct ipc *ipc)
+int platform_ipc_init(struct ipc ipc)
 {
 	struct intel_ipc_data *iipc;
 	uint32_t imrd, dir, caps, dev;
