@@ -34,6 +34,7 @@
 #include <sof/alloc.h>
 
 #if 0 // TODO: only compile if no arch memcpy is available.
+#define JUST_FOT_TEST
 
 void cmemcpy(void *dest, void *src, size_t size)
 {
