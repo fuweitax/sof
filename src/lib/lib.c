@@ -80,7 +80,7 @@ void bzero(void *s, size_t n)
 		d32[i] = 0;
 
 	/* zero remaining bytes */
-	d8 = (uint8_t*) &d32[i];
+	d8 = (uint8_t*) &d32[i]
 	for (i = 0; i <	r; i++)
 		d8[i] = 0;
 }
