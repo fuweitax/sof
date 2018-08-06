@@ -32,7 +32,7 @@
 #include <stdlib.h>
 #include <sof/sof.h>
 #include <sof/alloc.h>
-
+#define just_for_test
 #if 0 // TODO: only compile if no arch memcpy is available.
 
 void cmemcpy(void *dest, void *src, size_t size)
