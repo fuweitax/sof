@@ -71,6 +71,7 @@ void bzero(void *s, size_t n)
 {
 	uint32_t *d32 = s;
 	uint8_t *d8;
+	uint32_t a = 0;
 	int i;
 	int d = n >> 2;
 	int r = n % 4;
