@@ -32,6 +32,7 @@
 #include <sof/sof.h>
 #include <sof/lock.h>
 #include <sof/list.h>
+#define just_for_test
 
 /* General purpose notifiers */
 
