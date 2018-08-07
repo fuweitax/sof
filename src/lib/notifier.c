@@ -34,7 +34,7 @@
 #include <sof/list.h>
 
 /* General purpose notifiers */
-
+#define just_for_test
 struct notify {
 	spinlock_t lock;
 	struct list_item list;	/* list of notifiers */
