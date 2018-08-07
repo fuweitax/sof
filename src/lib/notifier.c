@@ -55,6 +55,7 @@ void notifier_unregister(struct notifier *notifier)
 	list_item_del(&notifier->list);
 	spin_unlock(&_notify.lock);
 }
+#define jsut_fot_test
 
 void notifier_event(int id, int message, void *event_data)
 {
