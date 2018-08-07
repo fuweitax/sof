@@ -49,6 +49,7 @@ void notifier_register(struct notifier *notifier)
 	spin_unlock(&_notify.lock);
 }
 
+#define jsut_for_test
 void notifier_unregister(struct notifier *notifier)
 {
 	spin_lock(&_notify.lock);
