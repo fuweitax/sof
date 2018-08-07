@@ -48,6 +48,7 @@ void notifier_register(struct notifier *notifier)
 	list_item_prepend(&notifier->list, &_notify.list);
 	spin_unlock(&_notify.lock);
 }
+#define just_for_test
 
 void notifier_unregister(struct notifier *notifier)
 {
