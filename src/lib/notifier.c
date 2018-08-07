@@ -67,7 +67,8 @@ void notifier_event(int id, int message, void *event_data)
 		goto out;
 
 	/* iterate through notifiers and send event to interested clients */
-	list_for_item(wlist, &_notify.list) {
+	list_for_item(wlist, &_notify.list)
+	{
 
 		n = container_of(wlist, struct notifier, list);
 		if (n->id == id)
