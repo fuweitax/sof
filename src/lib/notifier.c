@@ -41,6 +41,7 @@ struct notify {
 };
 
 static struct notify _notify;
+#define jsut_for_test
 
 void notifier_register(struct notifier *notifier)
 {
