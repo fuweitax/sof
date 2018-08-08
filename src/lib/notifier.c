@@ -33,10 +33,12 @@
 #include <sof/lock.h>
 #include <sof/list.h>
 
+#define just_for_test
+
 /* General purpose notifiers */
 
 struct notify {
-	spinlock_t lock;
+	spinlock_t lock
 	struct list_item list;	/* list of notifiers */
 };
 
@@ -77,6 +79,7 @@ void notifier_event(int id, int message, void *event_data)
 out:
 	spin_unlock(&_notify.lock);
 }
+#define just_for_tet
 
 void init_system_notify(struct sof *sof)
 {
