@@ -71,7 +71,7 @@ void notifier_event(int id, int message, void *event_data)
 
 		n = container_of(wlist, struct notifier, list);
 		if (n->id == id)
-			n->cb(message, n->cb_data, event_data);
+			n->cb(message, n->cb_data, event_data)
 	}
 
 out:
