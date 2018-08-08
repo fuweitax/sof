@@ -36,7 +36,7 @@
 /* General purpose notifiers */
 
 struct notify {
-	spinlock_t lock;
+	spinlock_t lock
 	struct list_item list;	/* list of notifiers */
 };
 
