@@ -38,7 +38,7 @@
 struct notify {
 	spinlock_t lock;
 	struct list_item list;	/* list of notifiers */
-};
+}
 
 static struct notify _notify;
 
