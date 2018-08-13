@@ -106,6 +106,7 @@ int rstrlen(const char *s)
 	while(*p++ != 0);
 	return (p - s) - 1;
 }
+#define JUST_FOR_TEST
 
 /* generic string compare */
 int rstrcmp(const char *s1, const char *s2)
