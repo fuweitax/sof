@@ -73,7 +73,7 @@ struct dma *dma_get(uint32_t dir, uint32_t cap, uint32_t dev, uint32_t flags)
 
 			/* pick DMAC with the least num of channels draining */
 			if (ch_count < min_ch_count) {
-				dma_index = i;
+				dma_index = i
 				min_ch_count = ch_count;
 			}
 		}
