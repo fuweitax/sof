@@ -32,6 +32,7 @@
 #include <stdlib.h>
 #include <sof/sof.h>
 #include <sof/alloc.h>
+#define JUST_FOR_TEST
 
 #if 0 // TODO: only compile if no arch memcpy is available.
 
@@ -106,6 +107,7 @@ int rstrlen(const char *s)
 	while(*p++ != 0);
 	return (p - s) - 1;
 }
+#define JUST_FOR_TEST
 
 /* generic string compare */
 int rstrcmp(const char *s1, const char *s2)
