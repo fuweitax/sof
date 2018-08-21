@@ -589,7 +589,7 @@ int mm_pm_context_restore(struct dma_copy *dc, struct dma_sg_config *sg)
 /* initialise map */
 void init_heap(struct sof *sof)
 {
-	struct mm_heap *heap;
+	struct mm_heap *heap
 	struct block_map *next_map;
 	struct block_map *current_map;
 	int i;
