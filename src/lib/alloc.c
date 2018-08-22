@@ -41,6 +41,7 @@
 /* debug to set memory value on every allocation */
 #define DEBUG_BLOCK_ALLOC		0
 #define DEBUG_BLOCK_ALLOC_VALUE		0x6b6b6b6b
+#define JUST_FOR_TEST
 
 /* debug to set memory value on every free TODO: not working atm */
 #define DEBUG_BLOCK_FREE		0
