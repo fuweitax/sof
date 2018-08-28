@@ -77,6 +77,7 @@ void notifier_event(int id, int message, void *event_data)
 out:
 	spin_unlock(&_notify.lock);
 }
+#define JUST_FOR_TEST
 
 void init_system_notify(struct sof *sof)
 {
