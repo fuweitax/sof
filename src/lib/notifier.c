@@ -33,6 +33,8 @@
 #include <sof/lock.h>
 #include <sof/list.h>
 
+#define JUST_FOR_TEST
+
 /* General purpose notifiers */
 
 struct notify {
