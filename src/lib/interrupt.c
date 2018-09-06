@@ -38,6 +38,8 @@
 #include <stdint.h>
 #include <stdlib.h>
 
+#define JUST_FOR_TEST
+
 static int irq_register_child(struct irq_desc *parent, int irq,
 			      void (*handler)(void *arg), void *arg);
 static void irq_unregister_child(struct irq_desc *parent, int irq);
