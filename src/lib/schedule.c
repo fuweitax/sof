@@ -46,6 +46,8 @@
 #include <sof/audio/pipeline.h>
 #include <arch/task.h>
 
+#define JUST_FOR_TEST
+
 struct schedule_data {
 	spinlock_t lock;
 	struct list_item list;	/* list of tasks in priority queue */
