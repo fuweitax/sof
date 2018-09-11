@@ -42,6 +42,8 @@
 #include <platform/platform.h>
 #include <limits.h>
 
+#define JUST_FOR_TEST
+
 /*
  * Generic delayed work queue support.
  *
