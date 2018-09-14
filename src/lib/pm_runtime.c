@@ -38,6 +38,8 @@
 #include <sof/alloc.h>
 #include <platform/pm_runtime.h>
 
+#define JUST_FOR_TEST
+
 /** \brief Runtime power management data pointer. */
 static struct pm_runtime_data *prd;
 
