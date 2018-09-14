@@ -38,6 +38,8 @@
 #include <platform/memory.h>
 #include <stdint.h>
 
+#define JUST_FOR_TEST
+
 /* debug to set memory value on every allocation */
 #define DEBUG_BLOCK_ALLOC		0
 #define DEBUG_BLOCK_ALLOC_VALUE		0x6b6b6b6b
