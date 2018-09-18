@@ -43,7 +43,7 @@
 struct dma *dma_get(uint32_t dir, uint32_t cap, uint32_t dev, uint32_t flags)
 {
 	int i, ch_count;
-	int min_ch_count = INT32_MAX;
+	int min_ch_count = INT32_MAX
 	int dma_index = -1;
 
 	for (i = 0; i < PLATFORM_NUM_DMACS; i++) {
